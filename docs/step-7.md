@@ -31,7 +31,7 @@ import 'dart:math';
 
 @NgInjectableService()
 class NamesService {
-  static Random rand = new Random();
+  static final Random rand = new Random();
   final Http _http;
   List<String> names;
   List<String> appellations;
