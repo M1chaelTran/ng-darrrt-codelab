@@ -10,6 +10,6 @@ import 'package:angular/angular.dart';
 class CapitalizeFilter {
   call(String name) {
     if (name == null || name.isEmpty) return '';
-    return name[0].toUpperCase() + name.substring(1);
+    return name[0].toUpperCase() + name.toLowerCase().substring(1);
   }
 }
